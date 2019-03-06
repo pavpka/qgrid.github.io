@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        Editing — q-grid</title>
+    <meta charset="utf-8">
+    <meta name="description" content="qgrid - Framework for creating data grids">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Editing — qgrid">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https:////images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Editing — qgrid">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https:///assets/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/assets/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#2f80ed">
+    <meta name="theme-color" content="#2f80ed">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/lazy.js"></script>
+    <script>window.PAGE_TYPE = "Features"</script>
+
+<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="pages">
+
+
+<header>
+    
+
+<button class="nav-trigger" id="nav-trigger"></button>
+<div class="logo-wrapper">
+    <a href="/" class="logo"></a>
+</div>
+
+
+<a target="_blank" href="https://github.com/qgrid/ng" class="github"></a>
+
+</header>
+
+<aside id="nav">
+    <a href="/" class="logo"></a>
+    <input id="search" placeholder="Search" type="search" class="search" data-stop-propagation="">
+    <nav>
+    <ul>
+        
+                    <li><h3>Getting started</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/highlights.html">Highlights</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/install.html">How to install</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/architecture.html">Architecture</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/plugin.html">My Plugin</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/theme.html">My Theme</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/performance.html">Performance Tips</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/changelog.html">Changelog</a>
+        
+                        </li>
+        
+                    <li><h3>Features</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-columns.html">Data Columns</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-rows.html">Data Rows</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/cell-templates.html">Cell Templates</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/layout-system.html">Layout System</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/column-types.html">Column Types</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/style-api.html">Style API</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/selection.html">Selection</a>
+        
+                        </li>
+        
+                        <li class="active-topic ">
+        
+                            <span>Editing</span>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/row-details.html">Row Details</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/grouping.html">Grouping & Pivoting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/filtering.html">Filtering</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/sorting.html">Sorting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/export-import.html">Export/Import</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/navigation.html">Navigation</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/virtualization.html">Virtualization</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/rest.html">REST</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/misc.html">Miscellaneous</a>
+        
+                        </li>
+        
+
+    </ul>
+</nav>
+
+</aside>
+
+
+<main>
+    <div class="page-wrapper">
+    <h1>Editing</h1>
+    <p>There are situations when the end user need to edit data, in this case the q-grid provides a lot of possibilities.</p>
+<h2 id="Edit-Cell"><a href="#Edit-Cell" class="headerlink" title="Edit Cell"></a>Edit Cell</h2><p>Setup edit mode equals to <code>cell</code> to turn on editing. Use <code>canEdit</code> column attribute to disable editing of particular columns.</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid</span> <span class="token attr-name">editMode</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-column</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>birth<span class="token punctuation">"</span></span> <span class="token attr-name">canEdit</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>false<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-column</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/edit-cell-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Edit-Model"><a href="#Edit-Model" class="headerlink" title="Edit Model"></a>Edit Model</h2><p>Edit model could give extended control over data edit, to access these possibilities use <code>model.edit()</code> type.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">const</span> <span class="token punctuation">{</span> commit<span class="token punctuation">,</span> commitShortcuts<span class="token punctuation">,</span> state <span class="token punctuation">}</span> <span class="token operator">=</span> myGridModel<span class="token punctuation">.</span><span class="token function">edit</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="Edit-State"><a href="#Edit-State" class="headerlink" title="Edit State"></a>Edit State</h2><p>Indicates the current q-grid status in term of data manipulation.</p>
+<ul>
+<li><code>view</code> means that q-grid now is in the data browsing mode.</li>
+<li><code>edit</code> indicates that q-grid editor is opened.</li>
+<li><code>startBatch</code> and <code>endBatch</code> show status of the batch edit.</li>
+</ul>
+<h2 id="Edit-commands-amp-shortcuts"><a href="#Edit-commands-amp-shortcuts" class="headerlink" title="Edit commands &amp; shortcuts"></a>Edit commands &amp; shortcuts</h2><p>Use commands to have a global control over q-grid editing. Use shortcuts that have <code>{columnType: [keyboardKey]}</code> type to setup editing shortcuts.</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">gridModel<span class="token punctuation">.</span><span class="token function">edit</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   enter<span class="token punctuation">:</span> <span class="token punctuation">{</span> 
+      canExecute<span class="token punctuation">:</span> e <span class="token operator">=</span><span class="token operator">></span> e<span class="token punctuation">.</span>column<span class="token punctuation">.</span><span class="token keyword">class</span> <span class="token operator">===</span> <span class="token string">'data'</span> 
+   <span class="token punctuation">}</span><span class="token punctuation">,</span>
+   commitShortcuts<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      <span class="token string">'$default'</span><span class="token punctuation">:</span> <span class="token string">'tab|shift+tab|enter|ctrl+s'</span><span class="token punctuation">,</span>
+      <span class="token string">'reference'</span><span class="token punctuation">:</span> <span class="token string">'ctrl+s'</span><span class="token punctuation">,</span>
+      <span class="token string">'form'</span><span class="token punctuation">:</span> <span class="token string">'ctrl+s'</span><span class="token punctuation">,</span>
+      <span class="token string">'bool'</span><span class="token punctuation">:</span> <span class="token string">'tab|shift+tab|left|right|up|down|home|end|pageUp|pageDown'</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Batch-Edit"><a href="#Batch-Edit" class="headerlink" title="Batch Edit"></a>Batch Edit</h2><p>Use <code>editMethod</code> property to activate batch editing, this method activates cell handler that could be dragged to apply start cell value to the selected cells.</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid</span> <span class="token attr-name">editMode</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span> <span class="token attr-name">editMethod</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>batch<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/edit-cell-batch/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Dropdown-amp-Autocomplete"><a href="#Dropdown-amp-Autocomplete" class="headerlink" title="Dropdown &amp; Autocomplete"></a>Dropdown &amp; Autocomplete</h2><p>To populate list of items in dropdown/autocomplete columns use <code>fetch</code> editor property. Fetch option supports next data types.</p>
+<ul>
+<li>Array of objects or basic types.</li>
+<li>Function that returns array of basic types/objects/observables/promises.</li>
+<li>Observable with an array argument.</li>
+<li>Promise with an array argument.</li>
+</ul>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> of <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'rxjs'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`
+       &lt;q-grid editMode="cell">
+          &lt;q-grid-columns>
+             &lt;q-grid-column key="number" editor="dropdown" [editorOptions]="dropdownOptions">
+             &lt;/q-grid-column>
+          &lt;/q-grid-columns>
+       &lt;/q-grid>
+    `</span></span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token punctuation">{</span>
+    dropdownOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+        fetch<span class="token punctuation">:</span> <span class="token function">of</span><span class="token punctuation">(</span><span class="token punctuation">[</span>Math<span class="token punctuation">.</span>PI<span class="token punctuation">,</span> Math<span class="token punctuation">.</span>LN10<span class="token punctuation">,</span> Math<span class="token punctuation">.</span>LN2<span class="token punctuation">,</span> Math<span class="token punctuation">.</span>E<span class="token punctuation">,</span> Math<span class="token punctuation">.</span>LOG10E<span class="token punctuation">,</span> Math<span class="token punctuation">.</span>LOG2E<span class="token punctuation">,</span> Math<span class="token punctuation">.</span>SQRT1_2<span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-dropdown-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Edit-Row"><a href="#Edit-Row" class="headerlink" title="Edit Row"></a>Edit Row</h2><p>Use edit trigger component to show auto generated form that allows to change appropriate row data.</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid</span> <span class="token attr-name">[rows]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>rows | async<span class="token punctuation">"</span></span> <span class="token attr-name">[columns]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>columns<span class="token punctuation">"</span></span> <span class="token attr-name">editMode</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-columns</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-column</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>editForm<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>row-options<span class="token punctuation">"</span></span> <span class="token attr-name">pin</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>left<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ng-template</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>body<span class="token punctuation">"</span></span> <span class="token attr-name">let-$cell</span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-edit-form-trigger</span> <span class="token attr-name">[caption]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>$cell.row.name<span class="token punctuation">"</span></span> <span class="token attr-name">[cell]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>$cell<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+                <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-edit-form-trigger</span><span class="token punctuation">></span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ng-template</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-column</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-columns</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/edit-row-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Data-Manipulation"><a href="#Data-Manipulation" class="headerlink" title="Data Manipulation"></a>Data Manipulation</h2><p>Use Data Manipulation plugin to extend the q-grid with additional edit options. Please note that options and indicator column are not required to be present in the particular q-grid.</p>
+<ul>
+<li>Add new rows through the action bar.</li>
+<li>Delete rows using <code>row options</code> column.</li>
+<li>Cell and row color coding.</li>
+<li>If <code>row indicator</code> column exists it will be used to show row status.</li>
+<li>Access to the touched entities through the <code>dataManipulation</code> model.</li>
+</ul>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Grid<span class="token punctuation">,</span> GridModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ng2-qgrid'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   selector<span class="token punctuation">:</span> <span class="token string">'my-component'</span><span class="token punctuation">,</span>
+   template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`
+   &lt;q-grid [model]="gridModel">
+      &lt;q-grid-columns generation="deep">
+         &lt;q-grid-column key="rowIndicator" type="row-indicator">&lt;/q-grid-column>
+         &lt;q-grid-column key="rowOptions" type="row-options">&lt;/q-grid-column>
+    &lt;/q-grid-columns>
+
+    &lt;q-grid-data-manipulation [rowFactory]="myRowFactory">
+    &lt;/q-grid-data-manipulation>
+
+   &lt;/q-grid>`</span></span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token punctuation">{</span>
+   gridModel<span class="token punctuation">:</span> GridModel<span class="token punctuation">;</span>
+
+   <span class="token keyword">constructor</span><span class="token punctuation">(</span>qgrid<span class="token punctuation">:</span> Grid<span class="token punctuation">,</span> dataService<span class="token punctuation">:</span> MyDataService<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>gridModel <span class="token operator">=</span> qgrid<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      dataService
+         <span class="token punctuation">.</span><span class="token function">getPeople</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+         <span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>rows <span class="token operator">=</span><span class="token operator">></span> <span class="token keyword">this</span><span class="token punctuation">.</span>gridModel<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rows <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+
+   <span class="token function">myRowFactory</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Human</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+
+   <span class="token function">submit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">const</span> <span class="token punctuation">{</span> added<span class="token punctuation">,</span> edited<span class="token punctuation">,</span> deleted <span class="token punctuation">}</span> <span class="token operator">=</span> gridModel<span class="token punctuation">.</span><span class="token function">dataManipulation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+       dataService
+          <span class="token punctuation">.</span><span class="token function">addPeople</span><span class="token punctuation">(</span>added<span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">editPeople</span><span class="token punctuation">(</span>edited<span class="token punctuation">)</span>
+          <span class="token punctuation">.</span><span class="token function">deletePeople</span><span class="token punctuation">(</span>deleted<span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/manipulate-data-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Validation"><a href="#Validation" class="headerlink" title="Validation"></a>Validation</h2><p>The q-grid validation is based on language independent validation rules called LIVR. Use <code>q-grid-rule</code> component to specify which specifications should be applied to appropriate column.</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid</span> <span class="token attr-name">editMode</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-validation</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-rule</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>salary<span class="token punctuation">"</span></span> <span class="token attr-name">required</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-rule</span><span class="token punctuation">></span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-rule</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>cell<span class="token punctuation">"</span></span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>name<span class="token punctuation">"</span></span> <span class="token attr-name">required</span> <span class="token attr-name">[lengthBetween]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>[3, 40]<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-rule</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-validation</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/validation-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Suggested-Links"><a href="#Suggested-Links" class="headerlink" title="Suggested Links"></a>Suggested Links</h2><ul>
+<li><a href="https://github.com/koorchik/LIVR" target="_blank" rel="noopener">LIVR</a></li>
+</ul>
+
+</div>
+
+</main>
+
+
+<div id="overlay"></div>
+
+</body>
+
+</html>

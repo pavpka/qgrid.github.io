@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        Selection — q-grid</title>
+    <meta charset="utf-8">
+    <meta name="description" content="qgrid - Framework for creating data grids">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Selection — qgrid">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https:////images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Selection — qgrid">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https:///assets/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/assets/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#2f80ed">
+    <meta name="theme-color" content="#2f80ed">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/lazy.js"></script>
+    <script>window.PAGE_TYPE = "Features"</script>
+
+<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="pages">
+
+
+<header>
+    
+
+<button class="nav-trigger" id="nav-trigger"></button>
+<div class="logo-wrapper">
+    <a href="/" class="logo"></a>
+</div>
+
+
+<a target="_blank" href="https://github.com/qgrid/ng" class="github"></a>
+
+</header>
+
+<aside id="nav">
+    <a href="/" class="logo"></a>
+    <input id="search" placeholder="Search" type="search" class="search" data-stop-propagation="">
+    <nav>
+    <ul>
+        
+                    <li><h3>Getting started</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/highlights.html">Highlights</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/install.html">How to install</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/architecture.html">Architecture</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/plugin.html">My Plugin</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/theme.html">My Theme</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/performance.html">Performance Tips</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/changelog.html">Changelog</a>
+        
+                        </li>
+        
+                    <li><h3>Features</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-columns.html">Data Columns</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-rows.html">Data Rows</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/cell-templates.html">Cell Templates</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/layout-system.html">Layout System</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/column-types.html">Column Types</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/style-api.html">Style API</a>
+        
+                        </li>
+        
+                        <li class="active-topic ">
+        
+                            <span>Selection</span>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/editing.html">Editing</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/row-details.html">Row Details</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/grouping.html">Grouping & Pivoting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/filtering.html">Filtering</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/sorting.html">Sorting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/export-import.html">Export/Import</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/navigation.html">Navigation</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/virtualization.html">Virtualization</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/rest.html">REST</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/misc.html">Miscellaneous</a>
+        
+                        </li>
+        
+
+    </ul>
+</nav>
+
+</aside>
+
+
+<main>
+    <div class="page-wrapper">
+    <h1>Selection</h1>
+    <p>There are situations when the end user need to select rows or cells in the q-grid. The q-grid provides several modes to enable selection satisfaction. </p>
+<h2 id="Setup"><a href="#Setup" class="headerlink" title="Setup"></a>Setup</h2><p>Use q-grid html component to setup selection options.</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid</span> <span class="token attr-name">selectionMode</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>multiple<span class="token punctuation">"</span></span> <span class="token attr-name">selectionUnit</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>column<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>Or use q-grid model directly.</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">gridModel<span class="token punctuation">.</span><span class="token function">selection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   unit<span class="token punctuation">:</span> <span class="token string">'row'</span><span class="token punctuation">,</span>
+   mode<span class="token punctuation">:</span> <span class="token string">'single'</span><span class="token punctuation">,</span>
+   area<span class="token punctuation">:</span> <span class="token string">'custom'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Selection-Modes"><a href="#Selection-Modes" class="headerlink" title="Selection Modes"></a>Selection Modes</h2><p>Use this option to control selection behavior.</p>
+<ul>
+<li><code>single</code> mode when only one unit can be selected.</li>
+<li><code>multiple</code> mode when several units can be selected. When <code>row</code> unit is chosen, <code>select all</code> checkbox is displayed in the column header.</li>
+<li><code>range</code> mode when bag of units can be selected. Selection is made by mouse drag &amp; drop.</li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/select-cell-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Selection-Units"><a href="#Selection-Units" class="headerlink" title="Selection Units"></a>Selection Units</h2><p>Use this option to control selection primitive.</p>
+<ul>
+<li><code>row</code> unit when row can be selected by clicking on it or on the selection checkbox.</li>
+<li><code>cell</code> unit when cell can be selected by clicking on it.</li>
+<li><code>column</code> unit when column can be selected by clicking on it.</li>
+<li><code>mix</code> unit when need to select both rows and cells, rows can be selected by clicking on the row-indicator column.</li>
+</ul>
+<h2 id="Selection-Area"><a href="#Selection-Area" class="headerlink" title="Selection Area"></a>Selection Area</h2><p>Use this option to control if q-grid body clicks lead to row selection.</p>
+<ul>
+<li><code>body</code> area when click on the q-grid body leads to row selection.</li>
+<li><code>custom</code> area when only check boxes are responsible for the selection.</li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/select-row-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Selection-Event"><a href="#Selection-Event" class="headerlink" title="Selection Event"></a>Selection Event</h2><p>Use q-grid model to get list of selected items. Note that to configure format of the selected items, selection key could be used.</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript">gridModel<span class="token punctuation">.</span><span class="token function">selection</span><span class="token punctuation">(</span><span class="token punctuation">{</span>       
+   key<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+      row<span class="token punctuation">:</span> row <span class="token operator">=</span><span class="token operator">></span> row<span class="token punctuation">.</span>myId<span class="token punctuation">,</span>
+      column<span class="token punctuation">:</span> column <span class="token operator">=</span><span class="token operator">></span> column<span class="token punctuation">.</span>key
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+gridModel<span class="token punctuation">.</span>selectionChanged<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span>e <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+   <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span><span class="token function">hasChanges</span><span class="token punctuation">(</span><span class="token string">'items'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+       <span class="token keyword">const</span> <span class="token punctuation">{</span> items <span class="token punctuation">}</span> <span class="token operator">=</span> e<span class="token punctuation">.</span>state<span class="token punctuation">;</span>
+       <span class="token keyword">const</span> myId <span class="token operator">=</span> items<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span>row<span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Coming-Soon"><a href="#Coming-Soon" class="headerlink" title="Coming Soon"></a>Coming Soon</h2><ul>
+<li>Component selection change event.</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid</span> <span class="token attr-name">(selectionChange)</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myHandler<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<ul>
+<li>Selection model reflecting on model data id.</li>
+</ul>
+
+</div>
+
+</main>
+
+
+<div id="overlay"></div>
+
+</body>
+
+</html>

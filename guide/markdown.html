@@ -1,0 +1,337 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        Markdown — q-grid</title>
+    <meta charset="utf-8">
+    <meta name="description" content="qgrid - Framework for creating data grids">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Markdown — qgrid">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https:////images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Markdown — qgrid">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https:///assets/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/assets/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#2f80ed">
+    <meta name="theme-color" content="#2f80ed">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/lazy.js"></script>
+    <script>window.PAGE_TYPE = "Getting started"</script>
+
+<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="pages">
+
+
+<header>
+    
+
+<button class="nav-trigger" id="nav-trigger"></button>
+<div class="logo-wrapper">
+    <a href="/" class="logo"></a>
+</div>
+
+
+<a target="_blank" href="https://github.com/qgrid/ng" class="github"></a>
+
+</header>
+
+<aside id="nav">
+    <a href="/" class="logo"></a>
+    <input id="search" placeholder="Search" type="search" class="search" data-stop-propagation="">
+    <nav>
+    <ul>
+        
+                    <li><h3>Getting started</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/highlights.html">Highlights</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/install.html">How to install</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/architecture.html">Architecture</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/plugin.html">My Plugin</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/theme.html">My Theme</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/performance.html">Performance Tips</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/changelog.html">Changelog</a>
+        
+                        </li>
+        
+                    <li><h3>Features</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-columns.html">Data Columns</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-rows.html">Data Rows</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/cell-templates.html">Cell Templates</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/layout-system.html">Layout System</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/column-types.html">Column Types</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/style-api.html">Style API</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/selection.html">Selection</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/editing.html">Editing</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/row-details.html">Row Details</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/grouping.html">Grouping & Pivoting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/filtering.html">Filtering</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/sorting.html">Sorting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/export-import.html">Export/Import</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/navigation.html">Navigation</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/virtualization.html">Virtualization</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/rest.html">REST</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/misc.html">Miscellaneous</a>
+        
+                        </li>
+        
+
+    </ul>
+</nav>
+
+</aside>
+
+
+<main>
+    <div class="page-wrapper">
+    <h1>Markdown</h1>
+    <h3 id="Header"><a href="#Header" class="headerlink" title="Header"></a>Header</h3><p>Paragraph text. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<pre class="line-numbers language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> ng-qgrid
+$ bower <span class="token function">install</span> ng-qgrid
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+<h3 id="Second-Header"><a href="#Second-Header" class="headerlink" title="Second Header"></a>Second Header</h3><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+<p>JSFiddle embed example</p>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/edit/qgrid-ng-5-01-02-simple?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h3 id="Third-Header"><a href="#Third-Header" class="headerlink" title="Third Header"></a>Third Header</h3><h4 id="Ok-lets-try-some-tables"><a href="#Ok-lets-try-some-tables" class="headerlink" title="Ok, lets try some tables"></a>Ok, lets try some tables</h4><table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 1 is</td>
+<td style="text-align:center">left-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Markdown</th>
+<th>Less</th>
+<th>Pretty</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>Still</em></td>
+<td><a href="https://www.google.com" title="Google&#39;s Homepage" target="_blank" rel="noopener"><code>renders</code></a></td>
+<td><strong>nicely</strong></td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+</tr>
+</tbody>
+</table>
+<h4 id="And-Lists"><a href="#And-Lists" class="headerlink" title="And Lists"></a>And Lists</h4><ul>
+<li>One<ul>
+<li>oneone</li>
+<li>onetwo<ol>
+<li>foo</li>
+<li>bar</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>Two</li>
+<li>Three</li>
+</ul>
+<ol>
+<li>First<ul>
+<li>foo<ul>
+<li>bar</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Second</li>
+<li>Third</li>
+<li>Fourth</li>
+</ol>
+<h4 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h4><blockquote>
+<p>Sed ut perspiciatis unde omnis iste <code>natus</code> error sit voluptatem accusantium doloremque laudantium,<br>totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto<br>beatae vitae dicta sunt.</p>
+</blockquote>
+<p>Thats all folks!</p>
+
+</div>
+
+</main>
+
+
+<div id="overlay"></div>
+
+</body>
+
+</html>

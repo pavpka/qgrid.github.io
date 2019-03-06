@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        REST — q-grid</title>
+    <meta charset="utf-8">
+    <meta name="description" content="qgrid - Framework for creating data grids">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="REST — qgrid">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https:////images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="REST — qgrid">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https:///assets/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/assets/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#2f80ed">
+    <meta name="theme-color" content="#2f80ed">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/lazy.js"></script>
+    <script>window.PAGE_TYPE = "Features"</script>
+
+<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="pages">
+
+
+<header>
+    
+
+<button class="nav-trigger" id="nav-trigger"></button>
+<div class="logo-wrapper">
+    <a href="/" class="logo"></a>
+</div>
+
+
+<a target="_blank" href="https://github.com/qgrid/ng" class="github"></a>
+
+</header>
+
+<aside id="nav">
+    <a href="/" class="logo"></a>
+    <input id="search" placeholder="Search" type="search" class="search" data-stop-propagation="">
+    <nav>
+    <ul>
+        
+                    <li><h3>Getting started</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/highlights.html">Highlights</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/install.html">How to install</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/architecture.html">Architecture</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/plugin.html">My Plugin</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/theme.html">My Theme</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/performance.html">Performance Tips</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/changelog.html">Changelog</a>
+        
+                        </li>
+        
+                    <li><h3>Features</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-columns.html">Data Columns</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-rows.html">Data Rows</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/cell-templates.html">Cell Templates</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/layout-system.html">Layout System</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/column-types.html">Column Types</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/style-api.html">Style API</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/selection.html">Selection</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/editing.html">Editing</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/row-details.html">Row Details</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/grouping.html">Grouping & Pivoting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/filtering.html">Filtering</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/sorting.html">Sorting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/export-import.html">Export/Import</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/navigation.html">Navigation</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/virtualization.html">Virtualization</a>
+        
+                        </li>
+        
+                        <li class="active-topic ">
+        
+                            <span>REST</span>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/misc.html">Miscellaneous</a>
+        
+                        </li>
+        
+
+    </ul>
+</nav>
+
+</aside>
+
+
+<main>
+    <div class="page-wrapper">
+    <h1>REST</h1>
+    <p>Use REST plugin to connect q-grid with back-end. For sure back-end service should support query string that q-grid produces but again it’s possible to change the output format by overriding <code>serialize</code> method in the q-grid model. </p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid</span><span class="token punctuation">></span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-rest</span> <span class="token attr-name">[url]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>myServiceUrl<span class="token punctuation">"</span></span> <span class="token attr-name">method</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>GET<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-rest</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<h2 id="GET-Method-Contract"><a href="#GET-Method-Contract" class="headerlink" title="GET Method Contract"></a>GET Method Contract</h2><p>By default if GET method is used q-grid produces next url for filtering, sorting and pagination.</p>
+<p><code>?filter=lastName=in:Doe,Jones;firstName=in:John,Harry&amp;order=+firstName,-lastName&amp;skip=100&amp;take=50</code></p>
+<h2 id="POST-Method-Contract"><a href="#POST-Method-Contract" class="headerlink" title="POST Method Contract"></a>POST Method Contract</h2><p>By default if POST method is used q-grid produces next request body.</p>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token punctuation">{</span>
+    filter<span class="token punctuation">:</span> <span class="token string">'lastName=in:Doe,Jones;firstName=in:John,Harry'</span><span class="token punctuation">,</span>
+    order<span class="token punctuation">:</span> <span class="token string">'+firstName,-lastName'</span><span class="token punctuation">,</span>
+    skip<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">,</span>
+    take<span class="token punctuation">:</span> <span class="token number">50</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Custom-Contract"><a href="#Custom-Contract" class="headerlink" title="Custom Contract"></a>Custom Contract</h2><p>The q-grid allows to override data contracts that are produced by REST plugin.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript">@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   selector<span class="token punctuation">:</span> <span class="token string">'my-component'</span><span class="token punctuation">,</span>
+   template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`
+   &lt;q-grid>
+      &lt;q-grid-rest url="qgrid.github.io" method="POST">&lt;/q-grid-rest>
+   &lt;/q-grid>
+   `</span></span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">implements</span> <span class="token class-name">AfterViewInit</span> <span class="token punctuation">{</span>
+   <span class="token function">ViewChild</span><span class="token punctuation">(</span>GridComponent<span class="token punctuation">)</span> myGrid<span class="token punctuation">:</span> GridComponent<span class="token punctuation">;</span>   
+
+   <span class="token function">ngAfterViewInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> model <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>myGrid<span class="token punctuation">;</span>      
+      model<span class="token punctuation">.</span><span class="token function">rest</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        serialize<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+            <span class="token keyword">const</span> pagination <span class="token operator">=</span> model<span class="token punctuation">.</span><span class="token function">pagination</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">const</span> sort <span class="token operator">=</span> model<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">const</span> filter <span class="token operator">=</span> model<span class="token punctuation">.</span><span class="token function">filter</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token keyword">return</span> <span class="token punctuation">{</span>
+               filter<span class="token punctuation">:</span> filter<span class="token punctuation">.</span>by<span class="token punctuation">,</span>
+               order<span class="token punctuation">:</span> sort<span class="token punctuation">.</span>by<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span>s <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+                  <span class="token keyword">const</span> key <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+                  <span class="token keyword">const</span> value <span class="token operator">=</span> s<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">;</span>
+                  <span class="token keyword">return</span> <span class="token punctuation">(</span>value <span class="token operator">===</span> <span class="token string">'asc'</span> <span class="token operator">?</span> <span class="token string">'+'</span> <span class="token punctuation">:</span> <span class="token string">'-'</span><span class="token punctuation">)</span> <span class="token operator">+</span> key<span class="token punctuation">;</span>
+               <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+               skip<span class="token punctuation">:</span> pagination<span class="token punctuation">.</span>current <span class="token operator">*</span> paginationState<span class="token punctuation">.</span>size<span class="token punctuation">,</span>
+               take<span class="token punctuation">:</span> pagination<span class="token punctuation">.</span>size
+            <span class="token punctuation">}</span><span class="token punctuation">;</span>      
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</div>
+
+</main>
+
+
+<div id="overlay"></div>
+
+</body>
+
+</html>

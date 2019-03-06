@@ -1,0 +1,380 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        Data Rows — q-grid</title>
+    <meta charset="utf-8">
+    <meta name="description" content="qgrid - Framework for creating data grids">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Data Rows — qgrid">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https:////images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Data Rows — qgrid">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https:///assets/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/assets/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#2f80ed">
+    <meta name="theme-color" content="#2f80ed">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/lazy.js"></script>
+    <script>window.PAGE_TYPE = "Features"</script>
+
+<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="pages">
+
+
+<header>
+    
+
+<button class="nav-trigger" id="nav-trigger"></button>
+<div class="logo-wrapper">
+    <a href="/" class="logo"></a>
+</div>
+
+
+<a target="_blank" href="https://github.com/qgrid/ng" class="github"></a>
+
+</header>
+
+<aside id="nav">
+    <a href="/" class="logo"></a>
+    <input id="search" placeholder="Search" type="search" class="search" data-stop-propagation="">
+    <nav>
+    <ul>
+        
+                    <li><h3>Getting started</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/highlights.html">Highlights</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/install.html">How to install</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/architecture.html">Architecture</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/plugin.html">My Plugin</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/theme.html">My Theme</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/performance.html">Performance Tips</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/changelog.html">Changelog</a>
+        
+                        </li>
+        
+                    <li><h3>Features</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-columns.html">Data Columns</a>
+        
+                        </li>
+        
+                        <li class="active-topic ">
+        
+                            <span>Data Rows</span>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/cell-templates.html">Cell Templates</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/layout-system.html">Layout System</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/column-types.html">Column Types</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/style-api.html">Style API</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/selection.html">Selection</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/editing.html">Editing</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/row-details.html">Row Details</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/grouping.html">Grouping & Pivoting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/filtering.html">Filtering</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/sorting.html">Sorting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/export-import.html">Export/Import</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/navigation.html">Navigation</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/virtualization.html">Virtualization</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/rest.html">REST</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/misc.html">Miscellaneous</a>
+        
+                        </li>
+        
+
+    </ul>
+</nav>
+
+</aside>
+
+
+<main>
+    <div class="page-wrapper">
+    <h1>Data Rows</h1>
+    <p>There are a few ways to fill in the q-grid with data rows.</p>
+<h2 id="Array-lt-gt"><a href="#Array-lt-gt" class="headerlink" title="Array&lt;{}&gt;"></a>Array&lt;{}&gt;</h2><p>Any array of objects can be directly bind to the q-grid <code>rows</code> attribute. If <code>observables</code> are used don’t forget to add <code>async</code> pipe. Note that if an array of primitive types is used the q-grid won’t be able to process it.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript">@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   selector<span class="token punctuation">:</span> <span class="token string">'my-component'</span><span class="token punctuation">,</span>
+   template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`
+      &lt;q-grid [rows]="myRows | async">
+            &lt;q-grid-columns generation="deep">&lt;/q-grid-columns>
+      &lt;/q-grid>
+      `</span></span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token punctuation">{</span>
+   myRows<span class="token punctuation">:</span> Observable<span class="token operator">&lt;</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token operator">></span><span class="token punctuation">;</span>
+
+   <span class="token keyword">constructor</span><span class="token punctuation">(</span>dataService<span class="token punctuation">:</span> MyDataService<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>myRows <span class="token operator">=</span> dataService<span class="token punctuation">.</span><span class="token function">getRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="The-Grid-Model"><a href="#The-Grid-Model" class="headerlink" title="The Grid Model"></a>The Grid Model</h2><p>Use <code>Grid</code> service to create q-grid model and fill in <code>data</code> with rows.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Grid<span class="token punctuation">,</span> GridModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ng2-qgrid'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   selector<span class="token punctuation">:</span> <span class="token string">'my-component'</span><span class="token punctuation">,</span>
+   template<span class="token punctuation">:</span> <span class="token string">'&lt;q-grid [model]="gridModel">&lt;/q-grid>'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token punctuation">{</span>
+   gridModel<span class="token punctuation">:</span> GridModel<span class="token punctuation">;</span>
+
+   <span class="token keyword">constructor</span><span class="token punctuation">(</span>qgrid<span class="token punctuation">:</span> Grid<span class="token punctuation">,</span> dataService<span class="token punctuation">:</span> MyDataService<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>gridModel <span class="token operator">=</span> qgrid<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      dataService
+         <span class="token punctuation">.</span><span class="token function">getRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+         <span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>rows <span class="token operator">=</span><span class="token operator">></span> <span class="token keyword">this</span><span class="token punctuation">.</span>gridModel<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rows <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="The-Grid-Component"><a href="#The-Grid-Component" class="headerlink" title="The Grid Component"></a>The Grid Component</h2><p>Use <code>GridComponent</code> selector for accessing the q-grid model. Note that grid component instance will be available only after view init.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> GridComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ng2-qgrid'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   selector<span class="token punctuation">:</span> <span class="token string">'my-component'</span><span class="token punctuation">,</span>
+   template<span class="token punctuation">:</span> <span class="token string">'&lt;q-grid>&lt;/q-grid>'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token keyword">implements</span> <span class="token class-name">AfterViewInit</span> <span class="token punctuation">{</span>
+   <span class="token function">ViewChild</span><span class="token punctuation">(</span>GridComponent<span class="token punctuation">)</span> myGrid<span class="token punctuation">:</span> GridComponent<span class="token punctuation">;</span>
+
+   <span class="token keyword">constructor</span><span class="token punctuation">(</span>dataService<span class="token punctuation">:</span> MyDataService<span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+
+   <span class="token function">ngAfterViewInit</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> <span class="token punctuation">{</span> model <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>myGrid<span class="token punctuation">;</span>
+      dataService
+         <span class="token punctuation">.</span><span class="token function">getRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+         <span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>rows <span class="token operator">=</span><span class="token operator">></span> model<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rows <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="The-Pipe"><a href="#The-Pipe" class="headerlink" title="The Pipe"></a>The Pipe</h2><p>The q-grid pipe is a series of methods that grid invokes asynchronously anytime refresh is required. Every pipe in the series gets data from previous one, handles it and passes to the next one. Use <code>data pipe</code> property to modify the default pipeline.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> PipeContext<span class="token punctuation">,</span> PipeMemo <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ng2-qgrid'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   selector<span class="token punctuation">:</span> <span class="token string">'my-component'</span><span class="token punctuation">,</span>
+   template<span class="token punctuation">:</span> <span class="token string">'&lt;q-grid [pipe]="myPipe">&lt;/q-grid>'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token punctuation">{</span>
+   myPipe<span class="token punctuation">:</span> <span class="token keyword">Array</span><span class="token operator">&lt;</span><span class="token punctuation">(</span>memo<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">,</span> context<span class="token punctuation">:</span> PipeContext<span class="token punctuation">,</span> next<span class="token punctuation">:</span> <span class="token punctuation">(</span>memo<span class="token punctuation">:</span> <span class="token keyword">any</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token keyword">void</span><span class="token punctuation">)</span><span class="token operator">></span><span class="token punctuation">;</span>
+
+   <span class="token keyword">constructor</span><span class="token punctuation">(</span>qgrid<span class="token punctuation">:</span> Grid<span class="token punctuation">,</span> dataService<span class="token punctuation">:</span> MyDataService<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment" spellcheck="true">// Anytime refresh is required(e.g. on sort or filter) dataServicePipe will be called.</span>
+      <span class="token keyword">const</span> dataServicePipe <span class="token operator">=</span> 
+         <span class="token punctuation">(</span>rows<span class="token punctuation">,</span> context<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+            dataService<span class="token punctuation">.</span><span class="token function">getRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>rows <span class="token operator">=</span><span class="token operator">></span> <span class="token function">next</span><span class="token punctuation">(</span>rows<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+      <span class="token keyword">this</span><span class="token punctuation">.</span>myPipe <span class="token operator">=</span> <span class="token punctuation">[</span>dataServicePipe<span class="token punctuation">,</span> <span class="token operator">...</span>qgrid<span class="token punctuation">.</span>pipeUnit<span class="token punctuation">.</span><span class="token keyword">default</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>Here are set of internal q-grid pipes:</p>
+<ul>
+<li><p><code>qgrid.pipe.data</code><br>The intent is to fill data <code>rows</code> property and setup initial set of data <code>columns</code> to use them in the next pipes. Without filling data columns, next pipes in the default pipeline won’t work, because they need to be aware of how to get column cell values from data source.  </p>
+</li>
+<li><p><code>qgrid.pipe.filter</code><br>Applies client side filtration, utilizes <code>filter</code> model for getting input data and <code>expression builder</code> kit to support complex logic.</p>
+</li>
+<li><p><code>qgrid.pipe.sort</code><br>Applies client side sorting, supports sorting by multiple columns.</p>
+</li>
+<li><p><code>qgrid.pipe.memo</code><br>Converts input of data rows to output that supports grouping and pivoting. </p>
+</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">memoPipe</span><span class="token punctuation">(</span>rows<span class="token punctuation">,</span> context<span class="token punctuation">,</span> next<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+   <span class="token function">next</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      rows<span class="token punctuation">,</span>
+      pivot<span class="token punctuation">:</span> <span class="token punctuation">{</span> heads<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span> rows<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      nodes<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+   <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li><p><code>qgrid.pipe.group</code><br>The intent is to build nodes from the raw data rows and fill in memo nodes section if group model has some input.</p>
+</li>
+<li><p><code>qgrid.pipe.pivot</code><br>The intent is to build <code>pivot</code> data from the raw data rows and fill in memo pivot section if pivot model has some input.</p>
+</li>
+<li><p><code>qgrid.pipe.column</code><br>Responsible for support: adding <code>control</code> type columns, like select or group columns, column cohorts (rowSpans and colSpans inside header), pivot column generation, column visibility and sorting. To the memo output <code>columns</code> property is added.</p>
+</li>
+<li><p><code>qgrid.pipe.pagination</code><br>Applies pagination if scroll mode is not <code>virtual</code>.</p>
+</li>
+<li><p><code>qgrid.pipe.view</code><br>The intent is to order rows appropriate to the <code>row list</code> model(row drag &amp; drop support) and fill in the <code>scene</code> model that is used to render cells.</p>
+</li>
+</ul>
+<h2 id="Pipe-Units"><a href="#Pipe-Units" class="headerlink" title="Pipe Units"></a>Pipe Units</h2><p>Predefined sets of typical pipe series called pipe units are used to change the q-grid data processing behavior. Here are some examples:</p>
+<ul>
+<li><code>Default</code> pipe unit contains set of methods responding for the client side data processing.</li>
+</ul>
+<pre class="line-numbers language-typescript"><code class="language-typescript">qgrid<span class="token punctuation">.</span>pipeUnit<span class="token punctuation">.</span><span class="token keyword">default</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>data<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>filter<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>sort<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>memo<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>group<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>pivot<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>column<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>pagination<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>view
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li><code>View</code> pipe unit is intended to case when you process actions like sorting, filtering and pagination on server side and need just to show rows and columns in the q-grid.</li>
+</ul>
+<pre class="line-numbers language-typescript"><code class="language-typescript">qgrid<span class="token punctuation">.</span>pipeUnit<span class="token punctuation">.</span>view <span class="token operator">=</span> <span class="token punctuation">[</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>data<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>memo<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>column<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>view
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</div>
+
+</main>
+
+
+<div id="overlay"></div>
+
+</body>
+
+</html>

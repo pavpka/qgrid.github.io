@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        Column Types — q-grid</title>
+    <meta charset="utf-8">
+    <meta name="description" content="qgrid - Framework for creating data grids">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Column Types — qgrid">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https:////images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Column Types — qgrid">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https:///assets/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/assets/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#2f80ed">
+    <meta name="theme-color" content="#2f80ed">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/lazy.js"></script>
+    <script>window.PAGE_TYPE = "Features"</script>
+
+<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="pages">
+
+
+<header>
+    
+
+<button class="nav-trigger" id="nav-trigger"></button>
+<div class="logo-wrapper">
+    <a href="/" class="logo"></a>
+</div>
+
+
+<a target="_blank" href="https://github.com/qgrid/ng" class="github"></a>
+
+</header>
+
+<aside id="nav">
+    <a href="/" class="logo"></a>
+    <input id="search" placeholder="Search" type="search" class="search" data-stop-propagation="">
+    <nav>
+    <ul>
+        
+                    <li><h3>Getting started</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/highlights.html">Highlights</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/install.html">How to install</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/architecture.html">Architecture</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/plugin.html">My Plugin</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/theme.html">My Theme</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/performance.html">Performance Tips</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/changelog.html">Changelog</a>
+        
+                        </li>
+        
+                    <li><h3>Features</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-columns.html">Data Columns</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-rows.html">Data Rows</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/cell-templates.html">Cell Templates</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/layout-system.html">Layout System</a>
+        
+                        </li>
+        
+                        <li class="active-topic ">
+        
+                            <span>Column Types</span>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/style-api.html">Style API</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/selection.html">Selection</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/editing.html">Editing</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/row-details.html">Row Details</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/grouping.html">Grouping & Pivoting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/filtering.html">Filtering</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/sorting.html">Sorting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/export-import.html">Export/Import</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/navigation.html">Navigation</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/virtualization.html">Virtualization</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/rest.html">REST</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/misc.html">Miscellaneous</a>
+        
+                        </li>
+        
+
+    </ul>
+</nav>
+
+</aside>
+
+
+<main>
+    <div class="page-wrapper">
+    <h1>Column Types</h1>
+    <p>The q-grid provides various column types to handle all possible data type values inside the columns.</p>
+<h2 id="Array"><a href="#Array" class="headerlink" title="Array"></a>Array</h2><p>Array type is utilized by the q-grid to visualize primitive type collections. Here are some specific properties:</p>
+<ul>
+<li>Use <code>itemType</code> to setup array element type, could be used to populate correct input in the array editor.</li>
+<li>Use <code>itemFormat</code> to setup array element format string, could be used to build correct item presentation.</li>
+<li>Use <code>itemLabel</code> to setup a callback that returns a custom array element text.</li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-array-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<blockquote>
+<p>If list of complex objects need to be visualized, it’s required to setup <code>itemLabel</code> property or make custom cell templates.</p>
+</blockquote>
+<h2 id="Bool"><a href="#Bool" class="headerlink" title="Bool"></a>Bool</h2><p>Three state booleans are supported by the q-grid. Here are some specific properties:</p>
+<ul>
+<li>Use <code>trueValue</code> property to override the positive meaning.  </li>
+<li>Use <code>falseValue</code> property to override the negative meaning.</li>
+<li>Use <code>isIndeterminate</code> function to setup the undefined meaning.</li>
+<li>Use <code>isChecked</code>  function to setup boolean comparison.</li>
+</ul>
+<p>Use editor options to disable value change on the boolean type cell click.</p>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-column</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>bool<span class="token punctuation">"</span></span> <span class="token attr-name">[editorOptions]</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>{trigger: <span class="token punctuation">'</span>focus<span class="token punctuation">'</span>}<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-column</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-bool-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Currency"><a href="#Currency" class="headerlink" title="Currency"></a>Currency</h2><p>Use this type to display decimal values in a currency format. Here are some specific properties:</p>
+<ul>
+<li>Use <code>code</code> property to set the ISO 4217 currency code, such as <code>USD</code> for the US dollar and <code>EUR</code> for the euro. The default is <code>USD</code>.</li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-currency-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Date"><a href="#Date" class="headerlink" title="Date"></a>Date</h2><p>Use this column type to display date or date times. Here are some specific properties:</p>
+<ul>
+<li>Use <code>format</code> property to build a date display value according to locale rules.</li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-date-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Email"><a href="#Email" class="headerlink" title="Email"></a>Email</h2><p>To show email links with appropriate editors this column type could be used. Note if <code>label</code> property is not null, default editor could contain 2 input fields, respectively for the value and for the label.</p>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-email-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="File"><a href="#File" class="headerlink" title="File"></a>File</h2><p>Use file column type for uploading and linking files.</p>
+<ul>
+<li>Use <code>canUpload</code> function to setup predicate if a file is suitable for the uploading.</li>
+<li>Use <code>hasPreview</code> function to override predicate indicating if the uploading file is an image and can be displayed under the <code>img</code> tag. </li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-file-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Image"><a href="#Image" class="headerlink" title="Image"></a>Image</h2><p>Use this column type to display and upload images.</p>
+<ul>
+<li>Use <code>canUpload</code> function to setup predicate if an image is suitable for the uploading.</li>
+<li>Use <code>hasPreview</code> function to override predicate indicating if the uploading image can be displayed under the <code>img</code> tag. </li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-image-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Id"><a href="#Id" class="headerlink" title="Id"></a>Id</h2><blockquote>
+<p>This is a beta column type in the future it could be used to define row id with appropriate behavior.</p>
+</blockquote>
+<h2 id="Number"><a href="#Number" class="headerlink" title="Number"></a>Number</h2><p>Use number type to display decimal values. Here are some specific properties:</p>
+<ul>
+<li>Use <code>format</code> property to transform a number into a string, formatted according to locale rules that determine group sizing and separator, decimal-point character, and other locale-specific configurations.</li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-number-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h2><p>Use this column type when need to handle reference values. The <code>reference value</code> term describes data which can be defined using a key/value pair relationship. For edit mode <code>modelFactory</code> can be used to configure reference selection.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript">@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`
+       &lt;q-grid [rows]="rows">
+          &lt;q-grid-columns>
+             &lt;q-grid-column key="friends"
+                            type="reference"                            
+                            [editorOptions]="friendsReference">
+          &lt;/q-grid-columns>
+       &lt;/q-grid>
+    `</span></span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token punctuation">{</span>
+   friendsReference<span class="token punctuation">:</span> EditorOptions <span class="token operator">=</span> <span class="token punctuation">{</span>
+      modelFactory<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token punctuation">{</span> row<span class="token punctuation">,</span> reference <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
+         <span class="token keyword">const</span> model <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>qgrid<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+         <span class="token keyword">this</span><span class="token punctuation">.</span>dataService
+            <span class="token punctuation">.</span><span class="token function">getFriends</span><span class="token punctuation">(</span>row<span class="token punctuation">.</span>myId<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>rows <span class="token operator">=</span><span class="token operator">></span> model<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rows <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">return</span> model<span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-reference-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Row-Indicator"><a href="#Row-Indicator" class="headerlink" title="Row Indicator"></a>Row Indicator</h2><p>Row indicator belongs to the <code>control class</code> columns.</p>
+<ul>
+<li><code>Selection</code> mode utilizes row-indicator column type to support <code>mix</code> mode when both rows and cells can be selected. </li>
+<li><code>Data manipulation</code> plugin applies color coding to the row-indicator cells when appropriate rows were changed or deleted.</li>
+<li><code>Row drag</code> and <code>row resize</code> modes creates row-indicator column to show drag handlers.</li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-row-indicator-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Row-Number"><a href="#Row-Number" class="headerlink" title="Row Number"></a>Row Number</h2><p>Use <code>row number</code> type to add left pinned column that displays row indices.</p>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-row-number-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Row-Options"><a href="#Row-Options" class="headerlink" title="Row Options"></a>Row Options</h2><p>Setup <code>editorOptions</code> property of the <code>row-indicator</code> column type to show list of the available actions for the appropriate row.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript">@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    template<span class="token punctuation">:</span> <span class="token template-string"><span class="token string">`
+       &lt;q-grid [rows]="rows">
+         &lt;q-grid-column key="rowOptions"
+                          type="row-options"
+                          [editorOptions]="{actions: rowActions}">
+           &lt;/q-grid-column>
+       &lt;/q-grid>
+    `</span></span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token punctuation">{</span>
+    rowActions <span class="token operator">=</span> <span class="token punctuation">[</span>
+        <span class="token keyword">new</span> <span class="token class-name">Action</span><span class="token punctuation">(</span>
+            <span class="token keyword">new</span> <span class="token class-name">Command</span><span class="token operator">&lt;</span><span class="token punctuation">{</span> row<span class="token punctuation">:</span> Atom <span class="token punctuation">}</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                execute<span class="token punctuation">:</span> cell <span class="token operator">=</span><span class="token operator">></span> window<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span>cell<span class="token punctuation">.</span>row<span class="token punctuation">.</span>source<span class="token punctuation">,</span> <span class="token string">'_blank'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+                shortcut<span class="token punctuation">:</span> <span class="token string">'alt+g'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+            <span class="token string">'Goto Wiki'</span><span class="token punctuation">,</span>
+            <span class="token string">'link'</span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-row-options-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Text"><a href="#Text" class="headerlink" title="Text"></a>Text</h2><p>This is a basic data column type that is responsible for handling textual values.</p>
+<ul>
+<li>Add <code>editor=&quot;text-area&quot;</code> to the q-grid column to make cell display multi-line text.</li>
+</ul>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-text-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Time"><a href="#Time" class="headerlink" title="Time"></a>Time</h2><p>Use number type to display time values in specific format.</p>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-time-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Url"><a href="#Url" class="headerlink" title="Url"></a>Url</h2><p>To show url links with appropriate editors this column type could be used. Note if <code>label</code> property is not null, default editor could contain 2 input fields, respectively for the value and for the label.</p>
+
+    <span class="editor">
+      <iframe data-src="//stackblitz.com/github/qgrid/ng2-example/tree/column-url-basic/latest?embed=1&file=app/app.component.html&hideNavigation=1&view=preview"></iframe>
+    </span>
+
+<h2 id="Suggested-Links"><a href="#Suggested-Links" class="headerlink" title="Suggested Links"></a>Suggested Links</h2><ul>
+<li><a href="https://angular.io/api/common/CurrencyPipe" target="_blank" rel="noopener">Angular currency pipe</a></li>
+<li><a href="https://angular.io/api/common/DecimalPipe" target="_blank" rel="noopener">Angular decimal pipe</a></li>
+<li><a href="https://angular.io/api/common/DatePipe" target="_blank" rel="noopener">Angular date pipe</a></li>
+</ul>
+
+</div>
+
+</main>
+
+
+<div id="overlay"></div>
+
+</body>
+
+</html>

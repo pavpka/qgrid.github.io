@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><meta name="generator" content="Hexo 3.8.0">
+    <title>
+        Architecture — q-grid</title>
+    <meta charset="utf-8">
+    <meta name="description" content="qgrid - Framework for creating data grids">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Architecture — qgrid">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="https:////images/logo.png">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Architecture — qgrid">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="https:///assets/logo.png">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicons/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="384x384" href="/assets/favicons/android-chrome-384x384.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/assets/favicons/ms-icon-144x144.png">
+    <link rel="icon" href="/assets/logo.png" type="image/png">
+
+    <meta name="msapplication-TileColor" content="#2f80ed">
+    <meta name="theme-color" content="#2f80ed">
+
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="manifest" href="/manifest.json">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono|Roboto+Slab" rel="stylesheet">
+
+    <!-- main page styles -->
+    <link rel="stylesheet" href="/css/page.css">
+
+    <!-- this needs to be loaded before guide's inline scripts -->
+    <script src="/js/menu.js"></script>
+    <script src="/js/lazy.js"></script>
+    <script>window.PAGE_TYPE = "Getting started"</script>
+
+<link rel="stylesheet" href="/css/prism-vs.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+
+<body class="pages">
+
+
+<header>
+    
+
+<button class="nav-trigger" id="nav-trigger"></button>
+<div class="logo-wrapper">
+    <a href="/" class="logo"></a>
+</div>
+
+
+<a target="_blank" href="https://github.com/qgrid/ng" class="github"></a>
+
+</header>
+
+<aside id="nav">
+    <a href="/" class="logo"></a>
+    <input id="search" placeholder="Search" type="search" class="search" data-stop-propagation="">
+    <nav>
+    <ul>
+        
+                    <li><h3>Getting started</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/highlights.html">Highlights</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/install.html">How to install</a>
+        
+                        </li>
+        
+                        <li class="active-topic ">
+        
+                            <span>Architecture</span>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/plugin.html">My Plugin</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/theme.html">My Theme</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/performance.html">Performance Tips</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/guide/changelog.html">Changelog</a>
+        
+                        </li>
+        
+                    <li><h3>Features</h3></li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-columns.html">Data Columns</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/data-rows.html">Data Rows</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/cell-templates.html">Cell Templates</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/layout-system.html">Layout System</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/column-types.html">Column Types</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/style-api.html">Style API</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/selection.html">Selection</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/editing.html">Editing</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/row-details.html">Row Details</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/grouping.html">Grouping & Pivoting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/filtering.html">Filtering</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/sorting.html">Sorting</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/export-import.html">Export/Import</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/navigation.html">Navigation</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/virtualization.html">Virtualization</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/rest.html">REST</a>
+        
+                        </li>
+        
+                        <li class=" ">
+        
+                            <a href="/feature/misc.html">Miscellaneous</a>
+        
+                        </li>
+        
+
+    </ul>
+</nav>
+
+</aside>
+
+
+<main>
+    <div class="page-wrapper">
+    <h1>Architecture</h1>
+    <h2 id="DOM"><a href="#DOM" class="headerlink" title="DOM"></a>DOM</h2><p>The q-grid internally uses basic DOM table elements, but there is no any component or service which works with core DOM directly. The q-grid populates an abstraction called <code>DOM Table</code> which encapsulates any low-level work with core DOM. The benefits:</p>
+<ul>
+<li>Simple access to the columns, rows and cells. Work with <code>DOM Table</code> just like using 2d array instead of complex selectors.</li>
+<li>Development transparency of the fixed header, footer, rows and columns.</li>
+<li>Much easier to handle row and column spans.</li>
+<li>Style API maintenance becomes easy and fast.</li>
+<li>Virtualization can be engaged without special code writing.</li>
+</ul>
+<h2 id="The-Grid-Model"><a href="#The-Grid-Model" class="headerlink" title="The Grid Model"></a>The Grid Model</h2><p>The q-grid introduces work item called <code>model</code>. In development terms the q-grid model can be described as a data-driven reactive state storage</p>
+<blockquote>
+<p>Note that q-grid model implements <code>immutable</code> pattern, to change any model property a new instance should be created.</p>
+</blockquote>
+<pre class="line-numbers language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// Works</span>
+gridModel<span class="token punctuation">.</span>dataChanged<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span>e <span class="token operator">=</span><span class="token operator">></span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'It works!'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+gridModel<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rows<span class="token punctuation">:</span> rows<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>newRow<span class="token punctuation">)</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+<span class="token comment" spellcheck="true">// Doesn't work</span>
+gridModel<span class="token punctuation">.</span>dataChanged<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span>e <span class="token operator">=</span><span class="token operator">></span> <span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'Never happens'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">const</span> <span class="token punctuation">{</span> rows <span class="token punctuation">}</span> <span class="token operator">=</span> gridModel<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+rows<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>newRow<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<p>There are 2 ways to obtain access to the q-grid model. One of them is to use <code>ViewChild</code> selector and retrieve model from the <code>GridComponent</code> in ngAfterViewInit hook, another, to add <code>Grid</code> service to the host component and create a new q-grid model.</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Grid<span class="token punctuation">,</span> GridModel <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'ng2-qgrid'</span><span class="token punctuation">;</span>
+
+@<span class="token function">Component</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+   selector<span class="token punctuation">:</span> <span class="token string">'my-component'</span><span class="token punctuation">,</span>
+   template<span class="token punctuation">:</span> <span class="token string">'&lt;q-grid [model]="gridModel">&lt;/q-grid>'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyComponent</span> <span class="token punctuation">{</span>
+   gridModel<span class="token punctuation">:</span> GridModel<span class="token punctuation">;</span>
+
+   <span class="token keyword">constructor</span><span class="token punctuation">(</span>qgrid<span class="token punctuation">:</span> Grid<span class="token punctuation">,</span> dataService<span class="token punctuation">:</span> MyDataService<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>gridModel <span class="token operator">=</span> qgrid<span class="token punctuation">.</span><span class="token function">model</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      dataService
+            <span class="token punctuation">.</span><span class="token function">getRows</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">subscribe</span><span class="token punctuation">(</span>rows <span class="token operator">=</span><span class="token operator">></span> <span class="token keyword">this</span><span class="token punctuation">.</span>gridModel<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rows <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="Reactive-Idea"><a href="#Reactive-Idea" class="headerlink" title="Reactive Idea"></a>Reactive Idea</h2><p>Any registered entity in the model gets own <code>Changed</code> event hook, which can be used to handle model modifications. There are 2 ways to work with event handlers.</p>
+<ul>
+<li>By using <code>on</code> method, if the event fired before subscription, it will be lost for the new handler.</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript">gridModel<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rows<span class="token punctuation">:</span> myRows <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+gridModel<span class="token punctuation">.</span>dataChanged<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span>e <span class="token operator">=</span><span class="token operator">></span> <span class="token comment" spellcheck="true">/* :-( */</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<ul>
+<li>By using <code>watch</code> method, if the event fired before subscription, the q-grid will artificially emit the latest event argument to a new handler.</li>
+</ul>
+<pre class="line-numbers language-javascript"><code class="language-javascript">gridModel<span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span><span class="token punctuation">{</span> rows<span class="token punctuation">:</span> myRows <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+gridModel<span class="token punctuation">.</span>dataChanged<span class="token punctuation">.</span><span class="token function">watch</span><span class="token punctuation">(</span>e <span class="token operator">=</span><span class="token operator">></span> <span class="token comment" spellcheck="true">/* :-) */</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="Plugins"><a href="#Plugins" class="headerlink" title="Plugins"></a>Plugins</h2><p>The main benefit of the q-grid model concept is a tight control over the q-grid state. The model instance becomes an entry point for the q-grid behavior transformations. The plugin system uses this feature to be simple and clear. Along with <code>DOM table</code>, plugins can be designed as standalone units without any q-grid internal infrastructure knowledge. Note that all components except table core units are plugins.</p>
+<h2 id="Template-System"><a href="#Template-System" class="headerlink" title="Template System"></a>Template System</h2><p>All plugins and cell renderers use q-grid template primitives. The basic concept is to utilize pair of <code>ng-container</code> and <code>ng-template</code> instances by using unique identifiers.</p>
+<ul>
+<li>Use <code>ng-template[key]</code> to add ng-template content to the internal template store under the <code>&quot;key&quot;</code> id.</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ng-template</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>toolbar-top.tpl.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-caption</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-caption</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ng-template</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li><code>ng-template[for]</code> acts the same as <code>ng-template[key]</code>, but has a lower priority and wont rewrite <code>&quot;key&quot;</code> templates in the store. Client code need to use it for templates safety.</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>q-grid-column</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ng-template</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>body<span class="token punctuation">"</span></span> <span class="token attr-name">let-$cell</span><span class="token punctuation">></span></span>
+          {{$cell.value}}
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ng-template</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>q-grid-column</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<ul>
+<li>Use <code>ng-container[key]</code> to replace ng-container content with a <code>ng-template[key|for]</code> keeping.</li>
+</ul>
+<pre class="line-numbers language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>ng-container</span> <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>toolbar-top.tpl.html<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>ng-container</span><span class="token punctuation">></span></span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<h2 id="Data-Pipe"><a href="#Data-Pipe" class="headerlink" title="Data Pipe"></a>Data Pipe</h2><p>The q-grid pipe is a series of methods that grid invokes asynchronously anytime refresh is required. Every pipe in the series gets data from previous one, handles it and passes to the next one. This basic concept allows to modify how data rows are processed to display the data. Here is the default pipeline:</p>
+<pre class="line-numbers language-typescript"><code class="language-typescript"><span class="token punctuation">[</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>data<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>filter<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>sort<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>memo<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>group<span class="token punctuation">,</span> 
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>pivot<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>column<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>pagination<span class="token punctuation">,</span>
+   qgrid<span class="token punctuation">.</span>pipe<span class="token punctuation">.</span>view
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h2 id="The-Scene"><a href="#The-Scene" class="headerlink" title="The Scene"></a>The Scene</h2><p>A class that contains the q-grid pipe results, actually <code>qgrid.pipe.view</code> pipe fills the scene, further the q-grid renderer outputs rows and columns using the scene model. Another attribute of the scene is <code>status</code>, it’s used by internal routines to manage the q-grid readiness.</p>
+<h2 id="Suggested-links"><a href="#Suggested-links" class="headerlink" title="Suggested links"></a>Suggested links</h2><ul>
+<li><a href="plugin.html">How to build a plugin</a></li>
+<li><a href="theme.html">How to make a custom theme</a></li>
+</ul>
+
+</div>
+
+</main>
+
+
+<div id="overlay"></div>
+
+</body>
+
+</html>
